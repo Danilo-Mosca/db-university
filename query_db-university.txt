@@ -13,7 +13,7 @@ WHERE `cfu` > 10;
 3. Selezionare tutti gli studenti che hanno più di 30 anni:
 SELECT YEAR(`date_of_birth`) AS `anno_di_nascita`, `id`, `name`, `surname`
 FROM `students`
-WHERE `date_of_birth` <= '1994-12-01'
+WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30
 ORDER BY `date_of_birth` ASC;
 
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286):
@@ -36,9 +36,9 @@ SELECT COUNT(`name`) AS `num_departments`
 FROM `departments`;
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50):
-SELECT COUNT(`phone`) AS `num_teachers_without_phone_number`
+SELECT COUNT(*) AS `num_teachers_without_phone_number`
 FROM `teachers`
-WHERE `phone` IS NOT NULL;
+WHERE `phone` IS NULL;
 
 9. Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo degree_id, inserire un valore casuale):
 INSERT INTO `students` (degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email)
