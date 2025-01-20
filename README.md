@@ -1,6 +1,6 @@
 # db-university
 
-Esercizio di oggi:
+Esercizio di oggi 20/01/2025:
 nome repo: db-university (la stessa di ieri)
 Dopo aver creato un nuovo database nel vostro MySQL Workbench e aver importato lo schema allegato, (se non l'avete già fatto stamattina), eseguite le query del file allegato.
 Cosa consegnare?
