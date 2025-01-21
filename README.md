@@ -1,4 +1,7 @@
 # db-university
+Esercizio di oggi 21/01/2025:
+nome repo: db-university (la stessa di ieri)
+Dopo aver testato le vostre query (del file allegato) con MySQL Workbench, riportatele in un file txt e caricatelo nella vostra repo.
 
 Esercizio di oggi 20/01/2025:
 nome repo: db-university (la stessa di ieri)
